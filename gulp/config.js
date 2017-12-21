@@ -109,9 +109,6 @@ module.exports = {
           'string-quotes': 'double',
           'color-hex-case': 'lower',
           'color-no-invalid-hex': true,
-          'comment-empty-line-before': [ 'always', {
-            'ignore': ['stylelint-commands', 'after-comment']
-          } ],
           'declaration-colon-space-after': 'always',
           'max-empty-lines': 2,
           'rule-empty-line-before': [ 'always', {
