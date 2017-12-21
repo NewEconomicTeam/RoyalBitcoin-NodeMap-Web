@@ -1,12 +1,13 @@
 @charset "utf-8";
 
-@import "partials/nav.css";
+@import "partials/nav";
+@import "partials/footer";
 
 :root {
   /*颜色变量*/
   --color-theme: #ff8c3a;
   --color-theme-hover: color( var(--color-theme) lightness(50%));
-  --color-background: #eaeaea;
+  --color-background-dark: #eaeaea;
   --color-font: #666;
   --color-font-dark: #333;
 }
