@@ -135,4 +135,7 @@ module.exports = {
       outputName: 'app.js'
     }]
   },
+  jshint: {
+    src: srcAssets + '/js/**/*.js'
+  },
 }
