@@ -148,4 +148,16 @@ module.exports = {
     src: srcAssets + '/static/images/**/*',
     dest: developmentAssets + '/img'
   },
+  nodeModules: {
+    development: {
+      src: [
+        node_modules + '/bootstrap/dist/**/bootstrap.css',
+        node_modules + '/bootstrap/dist/**/bootstrap-theme.css',
+        node_modules + '/echarts/dist/echarts.js',
+        node_modules + '/jquery/dist/jquery.js',
+        node_modules + '/bootstrap/dist/**/bootstrap.js',
+      ],
+      dest: developmentAssets
+    }
+  }
 }
