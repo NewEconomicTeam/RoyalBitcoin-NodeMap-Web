@@ -1,8 +1,13 @@
+html, body {
+  height: 100vh;
+  overflow: hidden;
+}
+
 body > .container-fluid {
   padding-left: 0;
   padding-right: 0;
 }
 
 .nodemap {
-  min-height: 80vh;
+  height: 100vh;
 }

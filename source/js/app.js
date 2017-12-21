@@ -94,7 +94,6 @@ function updateMap(allNodes) {
       map: 'world',
       left: 0,
       right: 0,
-      top: 0,
       silent: true,
       roam: true,
       itemStyle: {
