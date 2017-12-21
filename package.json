@@ -8,5 +8,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Moore.Huang",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.19.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-changed": "^3.1.1",
+    "require-dir": "^0.3.2",
+    "run-sequence": "^2.2.0"
+  }
 }
