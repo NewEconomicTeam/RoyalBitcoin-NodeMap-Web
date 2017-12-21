@@ -5,6 +5,7 @@ var sourcemaps     = require('gulp-sourcemaps');
 var size           = require('gulp-size');
 var gutil          = require('gulp-util');
 var browsersync    = require('browser-sync');
+var atimport       = require('postcss-import')
 var cssnano        = require('cssnano');
 var autoprefixer   = require('autoprefixer');
 var cssvariables   = require('postcss-css-variables');
@@ -22,6 +23,7 @@ function onError (err) {
  * 构建 sourcemaps 并进行压缩
  */
 var processors = [
+  atimport(),
   autoprefixer(config.options.autoprefixer),
   cssvariables(),
   mqpacker(config.options.mqpacker),

@@ -70,7 +70,7 @@ module.exports = {
     }
   },
   styles: {
-    src: srcAssets + '/styles/**/*.css',
+    src: srcAssets + '/styles/*.css',
     dest: developmentAssets + '/css',
     options: {
       autoprefixer: {
