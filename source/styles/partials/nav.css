@@ -29,8 +29,7 @@
 
 @media screen and (min-width: 768px) {
   .navbar-nav > li > a {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 20px;
   }
 }
 
