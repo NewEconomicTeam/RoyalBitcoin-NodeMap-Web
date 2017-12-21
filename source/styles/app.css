@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 @import "partials/nav";
+@import "partials/nodemap";
 @import "partials/footer";
 
 :root {
