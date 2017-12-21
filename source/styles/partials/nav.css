@@ -1,0 +1,13 @@
+.navbar-default .navbar-brand {
+  margin-right: 0rem;
+  color: var(--color-theme);
+  &:hover, &:focus {
+    color: var(--color-theme);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .navbar-brand {
+    margin-right: 6.66666rem;
+  }
+}

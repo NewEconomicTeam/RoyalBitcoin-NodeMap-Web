@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+@import "partials/nav.css";
+
+:root {
+  /*颜色变量*/
+  --color-theme: #ff8c3a;
+  --color-background: #eaeaea;
+  --color-font: #666;
+  --color-font-dark: #333;
+}
