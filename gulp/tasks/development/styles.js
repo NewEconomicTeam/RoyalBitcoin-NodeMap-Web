@@ -7,6 +7,7 @@ var gutil          = require('gulp-util');
 var browsersync    = require('browser-sync');
 var cssnano        = require('cssnano');
 var autoprefixer   = require('autoprefixer');
+var cssvariables   = require('postcss-css-variables');
 var mqpacker       = require('css-mqpacker');
 var config         = require('../../config').styles;
 
@@ -22,6 +23,7 @@ function onError (err) {
  */
 var processors = [
   autoprefixer(config.options.autoprefixer),
+  cssvariables(),
   mqpacker(config.options.mqpacker),
   cssnano(config.options.cssnano)
 ];
