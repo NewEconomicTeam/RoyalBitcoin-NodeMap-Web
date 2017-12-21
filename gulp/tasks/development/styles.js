@@ -42,5 +42,6 @@ gulp.task('styles', function() {
     .pipe(size({title: '[optimize:css](dst)'}))
     .pipe(sourcemaps.init())
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(config.dest));
+    .pipe(gulp.dest(config.dest))
+    .pipe(browsersync.stream());
 });
