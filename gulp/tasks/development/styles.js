@@ -29,7 +29,7 @@ var processors = [
   autoprefixer(config.options.autoprefixer),
   cssvariables(),
   mqpacker(config.options.mqpacker),
-  cssnano(config.options.cssnano)
+  // cssnano(config.options.cssnano)
 ];
 
 gulp.task('styles', function() {
