@@ -19,19 +19,6 @@ var sizes = [
   },
 ];
 
-function updateNodes() {
-  $.ajax({
-    url: '/api/nodes',
-    dataType: 'json',
-    success: function(data) {
-      updateMap(data);
-    },
-    complete: function() {
-      setTimeout(updateNodes, 30000);
-    }
-  });
-}
-
 function updateMap(allNodes) {
   var length = sizes.length;
   var nodes = new Array(length);
@@ -87,17 +74,17 @@ function updateMap(allNodes) {
           color: '#ff8c3a'
         }
       }
-    }
+    };
   });
 
   map.setOption({
     tooltip: {
       formatter: function(param) {
-        var data = param.data
+        var data = param.data;
         var location = [data[5], data[4], data[3]];
         return [
           location.filter(function(value) {
-            return value != '';
+            return value !== '';
           }).join(', '),
           '数量: ' + data[2]
         ].join('<br>');
@@ -138,6 +125,19 @@ function updateMap(allNodes) {
   //   }
   //   $('.nodeinfo').html(template);
   // }
+}
+
+function updateNodes() {
+  $.ajax({
+    url: '/api/nodes',
+    dataType: 'json',
+    success: function(data) {
+      updateMap(data);
+    },
+    complete: function() {
+      setTimeout(updateNodes, 30000);
+    }
+  });
 }
 
 $('body').on('touchstart', function(){});
