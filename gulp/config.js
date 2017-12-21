@@ -49,9 +49,9 @@ module.exports = {
       renameOptions: {},
       replace: {
         // // bootstrap
-        // '<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">': '<link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">',
-        // '<link rel="stylesheet" href="bootstrap/dist/css/bootstrap-theme.css">': '<link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">',
-        // '<script src="bootstrap/dist/js/bootstrap.js"></script>': '<script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>',
+        '<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">': '<link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">',
+        '<link rel="stylesheet" href="bootstrap/dist/css/bootstrap-theme.css">': '<link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">',
+        '<script src="bootstrap/dist/js/bootstrap.js"></script>': '<script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>',
 
         // // animate
         // '<link rel="stylesheet" href="animate.css/animate.css">': '<link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">',

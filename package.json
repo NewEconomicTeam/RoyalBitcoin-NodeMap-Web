@@ -26,5 +26,9 @@
     "require-dir": "^0.3.2",
     "run-sequence": "^2.2.0",
     "stylelint": "^8.4.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
   }
 }
