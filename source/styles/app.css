@@ -12,4 +12,6 @@
   --color-background-dark: #eaeaea;
   --color-font: #666;
   --color-font-dark: #333;
+
+  --color-panel: color( var(--color-background-dark) a(50%));
 }
