@@ -123,4 +123,16 @@ module.exports = {
       }
     }
   },
+  browserify: {
+    // 开启 source maps
+    debug: true,
+    // 可选的附加文件扩展名
+    extensions: ['.coffee', '.hbs'],
+    // bundle输出的配置文件
+    bundleConfigs: [{
+      dest: developmentAssets + '/js',
+      entries: './' + srcAssets + '/js/app.js',
+      outputName: 'app.js'
+    }]
+  },
 }

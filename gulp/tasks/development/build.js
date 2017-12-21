@@ -10,7 +10,7 @@ gulp.task('build', function(callback) {
     [
       'html',
       'styles',
-      // 'scripts',
+      'scripts',
       // 'images'
     ],
     // 'base64',
