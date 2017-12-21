@@ -1,12 +1,12 @@
 var gulp = require('gulp');
 var changed = require('gulp-changed');
 var browserSync = require('browser-sync');
-var config = require('../../config').staticFiles;
+var config = require('../../config').staticJS;
 
 /*
   拷贝变化的图片到构建目录下
 */
-gulp.task('static-files', function() {
+gulp.task('static-js', function() {
   browserSync.notify('拷贝静态文件');
 
   return gulp.src(config.src)
