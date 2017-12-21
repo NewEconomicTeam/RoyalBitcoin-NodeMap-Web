@@ -36,7 +36,10 @@ module.exports = {
     }
   },
   delete: {
-    src: [development, production]
+    src: [development, developmentAssets, production],
+    options: {
+      force: true,
+    }
   },
   html: {
     development: {
