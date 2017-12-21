@@ -138,4 +138,10 @@ module.exports = {
   jshint: {
     src: srcAssets + '/js/**/*.js'
   },
+  staticFiles: {
+    src: [
+      srcAssets + '/static/js/*.js',
+    ],
+    dest: developmentAssets + '/js'
+  },
 }

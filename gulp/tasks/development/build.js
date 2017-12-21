@@ -11,6 +11,7 @@ gulp.task('build', function(callback) {
       'html',
       'styles',
       'scripts',
+      'static-files',
       // 'images'
     ],
     // 'base64',
