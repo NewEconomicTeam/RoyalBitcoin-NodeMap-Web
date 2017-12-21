@@ -7,7 +7,7 @@ var config = require('../../config').images;
   拷贝变化的图片到构建目录下
 */
 gulp.task('images', function() {
-  browserSync.notify('Compiling Images');
+  browserSync.notify('处理图片资源');
 
   return gulp.src(config.src)
     .pipe(changed(config.dest))  // 忽略未变化的文件
