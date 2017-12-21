@@ -9,6 +9,7 @@ var atimport       = require('postcss-import')
 var nesting        = require('postcss-nesting')
 var cssnano        = require('cssnano');
 var autoprefixer   = require('autoprefixer');
+var colorfunction  = require('postcss-color-function')
 var cssvariables   = require('postcss-css-variables');
 var mqpacker       = require('css-mqpacker');
 var config         = require('../../config').styles;
@@ -28,6 +29,7 @@ var processors = [
   nesting(),
   autoprefixer(config.options.autoprefixer),
   cssvariables(),
+  colorfunction(),
   mqpacker(config.options.mqpacker),
   // cssnano(config.options.cssnano)
 ];

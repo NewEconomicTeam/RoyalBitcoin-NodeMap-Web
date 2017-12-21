@@ -22,6 +22,7 @@
     "gulp-size": "^2.1.0",
     "gulp-sourcemaps": "^2.6.1",
     "gulp-util": "^3.0.8",
+    "postcss-color-function": "^4.0.1",
     "postcss-css-variables": "^0.8.0",
     "postcss-import": "^11.0.0",
     "postcss-nesting": "^4.2.1",
