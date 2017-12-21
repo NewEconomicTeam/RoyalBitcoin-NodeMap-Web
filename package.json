@@ -22,7 +22,9 @@
     "gulp-size": "^2.1.0",
     "gulp-sourcemaps": "^2.6.1",
     "gulp-util": "^3.0.8",
+    "postcss-reporter": "^5.0.0",
     "require-dir": "^0.3.2",
-    "run-sequence": "^2.2.0"
+    "run-sequence": "^2.2.0",
+    "stylelint": "^8.4.0"
   }
 }
