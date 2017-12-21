@@ -107,11 +107,11 @@ function updateMap(allNodes) {
   });
 
   //update info
-  // if (totalCount > 0) {
-  //   var template = $($('#nodeinfo--template').html());
+  if (totalCount > 0) {
+    var template = $($('#nodeinfo--template').html());
   //   var ul = template.filter('ul');
   //   var rankTemplate = template.find('.nodeinfo--rankitem');
-  //   template.find('.nodeinfo--count').text(totalCount);
+    template.find('.nodeinfo--count').text(totalCount);
   //   template.find('.nodeinfo--rankitem').remove();
   //   for (i = 0; i < 10; i++) {
   //     if (!byCountryNodes[i]) {
@@ -122,8 +122,8 @@ function updateMap(allNodes) {
   //     rank.find('.country').text(byCountryNodes[i].country);
   //     rank.find('.nodes').text(byCountryNodes[i].count);
   //   }
-  //   $('.nodeinfo').html(template);
-  // }
+    $('.nodeinfo').html(template);
+  }
 }
 
 function updateNodes() {

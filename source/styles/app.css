@@ -2,6 +2,7 @@
 
 @import "partials/nav";
 @import "partials/nodemap";
+@import "partials/nodeinfo";
 @import "partials/footer";
 
 :root {
