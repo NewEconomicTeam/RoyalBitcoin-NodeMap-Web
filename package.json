@@ -1,0 +1,12 @@
+{
+  "name": "gulp-build",
+  "version": "1.0.0",
+  "description": "基于Gulp.js的Web构建脚本",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Moore.Huang",
+  "license": "ISC"
+}
