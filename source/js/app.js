@@ -140,4 +140,6 @@ function updateMap(allNodes) {
   // }
 }
 
+$('body').on('touchstart', function(){});
+
 updateNodes();
