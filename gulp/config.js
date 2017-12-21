@@ -13,20 +13,13 @@ var productionAssets = developmentAssets;
 module.exports = {
   browsersync: {
     development: {
-      server: {
-        baseDir: [
-          development,
-          node_modules]
-      },
+      proxy: 'localhost:8081',
       port: 9999,
       browser: ["google chrome"],
-      files: [
-      ]
+      files: []
     },
     production: {
-      server: {
-        baseDir: [production]
-      },
+      proxy: 'nodemap.rbtc.world',
       port: 9998,
       browser: ["google chrome"]
     }
