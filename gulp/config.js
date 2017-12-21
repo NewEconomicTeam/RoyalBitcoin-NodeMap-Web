@@ -144,4 +144,8 @@ module.exports = {
     ],
     dest: developmentAssets + '/js'
   },
+  images: {
+    src: srcAssets + '/static/images/**/*',
+    dest: developmentAssets + '/img'
+  },
 }
