@@ -27,6 +27,33 @@
   }
 }
 
+.navbar-default .navbar-nav > li > a {
+  &:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 0;
+    background: var(--color-theme);
+    height: 4px;
+    transition-property: "left, right";
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+  }
+
+  &:hover:before, &:focus:before {
+    left: 0;
+    right: 0;
+  }
+}
+
+.navbar-default .navbar-nav > li.active > a {
+  &:before {
+    left: 0;
+    right: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .navbar-nav > li > a {
     padding: 30px 20px;
