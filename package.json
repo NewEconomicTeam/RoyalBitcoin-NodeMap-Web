@@ -24,6 +24,7 @@
     "gulp-util": "^3.0.8",
     "postcss-css-variables": "^0.8.0",
     "postcss-import": "^11.0.0",
+    "postcss-nesting": "^4.2.1",
     "postcss-reporter": "^5.0.0",
     "require-dir": "^0.3.2",
     "run-sequence": "^2.2.0",

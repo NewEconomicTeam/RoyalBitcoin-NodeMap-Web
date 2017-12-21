@@ -6,6 +6,7 @@ var size           = require('gulp-size');
 var gutil          = require('gulp-util');
 var browsersync    = require('browser-sync');
 var atimport       = require('postcss-import')
+var nesting        = require('postcss-nesting')
 var cssnano        = require('cssnano');
 var autoprefixer   = require('autoprefixer');
 var cssvariables   = require('postcss-css-variables');
@@ -24,6 +25,7 @@ function onError (err) {
  */
 var processors = [
   atimport(),
+  nesting(),
   autoprefixer(config.options.autoprefixer),
   cssvariables(),
   mqpacker(config.options.mqpacker),
