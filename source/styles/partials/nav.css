@@ -1,8 +1,9 @@
 .navbar-default .navbar-brand {
   margin-right: 0rem;
   color: var(--color-theme);
+
   &:hover, &:focus {
-    color: var(--color-theme);
+    color: var(--color-theme-hover);
   }
 }
 
