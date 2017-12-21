@@ -4,14 +4,11 @@ var node_modules = 'node_modules';
 var src = 'source';
 var srcAssets = 'source';
 
-var development = 'build/development';
-var developmentAssets = 'build/development/static/frontend';
+var development = '../server/runtime/pages';
+var developmentAssets = '../server/server/pages/static/pages';
 
-var production = 'build/production';
-var productionAssets = 'build/production/static/frontend';
-
-var deployment = 'build/deployment';
-var deploymentAssets = 'build/deployment/static/frontend';
+var production = development;
+var productionAssets = developmentAssets;
 
 module.exports = {
   browsersync: {
@@ -19,8 +16,7 @@ module.exports = {
       server: {
         baseDir: [
           development,
-          node_modules,
-          development + '/html']
+          node_modules]
       },
       port: 9999,
       browser: ["google chrome"],
@@ -43,11 +39,11 @@ module.exports = {
   },
   html: {
     development: {
-      src: srcAssets + '/**/*.{html,htm}',
+      src: srcAssets + '/html/**/*.{html,htm}',
       dest: development
     },
     production: {
-      src: srcAssets + '/**/*.{html,htm}',
+      src: srcAssets + '/html/**/*.{html,htm}',
       dest: production,
       renameOptions: {},
       replace: {
