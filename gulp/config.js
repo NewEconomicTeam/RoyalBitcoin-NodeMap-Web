@@ -73,7 +73,6 @@ module.exports = {
     src: srcAssets + '/styles/**/*.css',
     dest: developmentAssets + '/css',
     options: {
-      precss: {},
       autoprefixer: {
         browsers: [
           'last 2 versions',
@@ -86,7 +85,8 @@ module.exports = {
         ],
         cascade: true
       },
-      mqpacker: {}
+      mqpacker: {},
+      cssnano: {}
     }
   },
   watch: {
