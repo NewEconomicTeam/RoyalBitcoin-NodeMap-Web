@@ -41,23 +41,20 @@ module.exports = {
       renameOptions: {},
       replace: {
         // // bootstrap
-        '<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">': '<link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">',
-        '<link rel="stylesheet" href="bootstrap/dist/css/bootstrap-theme.css">': '<link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">',
-        '<script src="bootstrap/dist/js/bootstrap.js"></script>': '<script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>',
+        'static/pages/css/bootstrap.css':
+          '//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css',
+        'static/pages/css/bootstrap-theme.css':
+          '//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css',
+        'static/pages/js/bootstrap.js':
+          '//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js',
 
-        // // animate
-        // '<link rel="stylesheet" href="animate.css/animate.css">': '<link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">',
+        // echarts
+        'static/pages/echarts.js':
+          '//cdn.bootcss.com/echarts/3.8.5/echarts.min.js',
 
-        // // aos
-        // '<link rel="stylesheet" href="aos/dist/aos.css">': '<link href="//cdn.bootcss.com/aos/2.2.0/aos.css" rel="stylesheet">',
-        // '<script src="aos/dist/aos.js"></script>': '<script src="//cdn.bootcss.com/aos/2.2.0/aos.js"></script>',
-
-        // // Others
-        // '<script src="jquery/dist/jquery.js"></script>': '<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>',
-        // '<script src="skrollr/dist/skrollr.min.js"></script>': '<script src="//cdn.bootcss.com/skrollr/0.6.30/skrollr.min.js"></script>',
-        // '<script src="vue/dist/vue.js"></script>': '<script src="//cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>',
-
-        // 'images/home/': '<?php echo get_template_directory_uri(); ?>/pages/gyl/images/home/'
+        // Others
+        'static/pages/jquery.js':
+          '//cdn.bootcss.com/jquery/3.2.1/jquery.min.js',
       }
     }
   },
