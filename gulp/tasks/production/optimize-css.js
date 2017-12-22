@@ -22,7 +22,7 @@ var processors = [
 ];
 
 gulp.task('optimize:css', function() {
-  browsersync.notify('使用 PostCSS 优化 CSS');
+  browsersync.notify('优化 CSS');
 
   return gulp.src(config.src)
     .pipe(plumber({
