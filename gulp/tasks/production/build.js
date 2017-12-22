@@ -9,7 +9,7 @@ gulp.task('build:prod', ['build'], function(callback) {
     'delete:prod',
     [
       'html:prod',
-      'optimize:html',
+      // 'optimize:html',
       'optimize:css',
       'optimize:js',
       'optimize:images'
