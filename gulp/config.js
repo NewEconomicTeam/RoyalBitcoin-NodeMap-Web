@@ -187,5 +187,10 @@ module.exports = {
       options: {},
       replace: {}
     },
+    js: {
+      src: productionAssets + '/js/*.js',
+      dest: productionAssets + '/js/',
+      options: {}
+    },
   },
 }
