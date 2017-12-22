@@ -155,5 +155,14 @@ module.exports = {
         dest: developmentAssets + '/js',
       },
     }
-  }
+  },
+  optimize: {
+    html: {
+      src: production + '/**/*.{html,htm,php}',
+      dest: production,
+      options: {
+        collapseWhitespace: true
+      }
+    },
+  },
 }
