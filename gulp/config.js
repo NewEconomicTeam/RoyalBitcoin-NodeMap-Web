@@ -182,7 +182,7 @@ module.exports = {
       }
     },
     css: {
-      src: productionAssets + '/css/app.css',
+      src: productionAssets + '/css/*.css',
       dest: productionAssets + '/css/',
       options: {},
       replace: {}
