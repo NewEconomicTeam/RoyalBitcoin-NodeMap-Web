@@ -21,10 +21,12 @@ body > .container {
     z-index: -1;
     background-color: var(--color-panel);
     border-radius: 1rem;
+    box-shadow: 0 0 2px var(--color-font);
   }
 
   & .nodeinfo--count {
     font-size: 3rem;
+    font-weight: 500;
     color: var(--color-font-dark);
 
     &:after {
