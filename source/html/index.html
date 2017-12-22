@@ -1,62 +1,12 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="renderer" content="webkit">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="description" content="RBTC,更好的数字货币世界">
-  <meta name="keywords" content="RBTC,数字货币,区块链,比特币">
-  <link rel="stylesheet" href="static/pages/css/bootstrap.css">
-  <link rel="stylesheet" href="static/pages/css/bootstrap-theme.css">
-  <link rel="stylesheet" href="static/pages/css/app.css">
-  <script src="static/pages/js/echarts.js"></script>
-  <title>节点地图</title>
-</head>
-<body>
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"   data-target="#navbar-collapse-list" aria-expanded="false">
-          <span class="sr-only">导航开关</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="//www.rbtc.world">RBTC</a>
-      </div>
+{% extends "pages/base.html" %}
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="navbar-collapse-list">
-        <ul class="nav navbar-nav">
-          <li>
-              <a href="//www.rbtc.world">首页</a>
-          </li>
-          <li class="active">
-            <a href="#">节点地图 <span class="sr-only">(当前)</span></a>
-          </li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container -->
-  </nav>
+{% block content %}
+<div class="nodemap" id="nodemap"></div>
+<div class="container">
+  <div class="nodeinfo"></div>
+</div>
 
-  <div class="nodemap" id="nodemap"></div>
-  <div class="container">
-    <div class="nodeinfo"></div>
-  </div>
-
-  <template id="nodeinfo--template">
-    <div><span class="nodeinfo--count"></span> 节点 </div>
-  </template>
-
-  <footer class="container-fluid">
-    <p>RBTC，更好的数字货币世界</p>
-  </footer>
-  <script src="static/pages/js/jquery.js"></script>
-  <script src="static/pages/js/bootstrap.js"></script>
-  <script src="static/pages/js/world.js"></script>
-  <script src="static/pages/js/app.js"></script>
-</body>
-</html>
+<template id="nodeinfo--template">
+  <div><span class="nodeinfo--count"></span> 节点 </div>
+</template>
+{% endblock %}

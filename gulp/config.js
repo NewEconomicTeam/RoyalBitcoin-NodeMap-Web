@@ -4,7 +4,7 @@ var node_modules = 'node_modules';
 var src = 'source';
 var srcAssets = 'source';
 
-var development = '../server/runtime/pages';
+var development = '../server/server/pages/templates/pages';
 var developmentAssets = '../server/server/pages/static/pages';
 
 var production = development;
@@ -58,19 +58,19 @@ module.exports = {
       renameOptions: {},
       replace: {
         // // bootstrap
-        'static/pages/css/bootstrap.css':
+        '/static/pages/css/bootstrap.css':
           '//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css',
-        'static/pages/css/bootstrap-theme.css':
+        '/static/pages/css/bootstrap-theme.css':
           '//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css',
-        'static/pages/js/bootstrap.js':
+        '/static/pages/js/bootstrap.js':
           '//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js',
 
         // echarts
-        'static/pages/echarts.js':
+        '/static/pages/js/echarts.js':
           '//cdn.bootcss.com/echarts/3.8.5/echarts.min.js',
 
         // Others
-        'static/pages/jquery.js':
+        '/static/pages/js/jquery.js':
           '//cdn.bootcss.com/jquery/3.2.1/jquery.min.js',
       }
     }
