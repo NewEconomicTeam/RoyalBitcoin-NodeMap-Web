@@ -25,9 +25,26 @@ module.exports = {
     }
   },
   delete: {
-    src: [development, developmentAssets, production],
-    options: {
-      force: true,
+    development: {
+      src: [development, developmentAssets],
+      options: {
+        force: true,
+      }
+    },
+    production: {
+      src: [
+        developmentAssets + '/css/app.css.map',
+
+        developmentAssets + '/css/bootstrap.css',
+        developmentAssets + '/css/bootstrap-theme.css',
+
+        developmentAssets + '/js/bootstrap.js',
+        developmentAssets + '/js/echarts.js',
+        developmentAssets + '/js/jquery.js',
+      ],
+      options: {
+        force: true,
+      }
     }
   },
   html: {
