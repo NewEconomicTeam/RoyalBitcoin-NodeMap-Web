@@ -7,12 +7,12 @@ var gutil          = require('gulp-util');
 var browsersync    = require('browser-sync');
 var atimport       = require('postcss-import')
 var nesting        = require('postcss-nesting')
-var cssnano        = require('cssnano');
 var autoprefixer   = require('autoprefixer');
 var colorfunction  = require('postcss-color-function')
 var cssvariables   = require('postcss-css-variables');
 var mqpacker       = require('css-mqpacker');
 var config         = require('../../config').styles;
+
 
 function onError (err) {
   gutil.beep();
@@ -31,7 +31,6 @@ var processors = [
   cssvariables(),
   colorfunction(),
   mqpacker(config.options.mqpacker),
-  // cssnano(config.options.cssnano)
 ];
 
 gulp.task('styles', function() {
@@ -41,9 +40,7 @@ gulp.task('styles', function() {
     .pipe(plumber({
       errorHandler: onError
     }))
-    .pipe(size({title: '[optimize:css](src)'}))
     .pipe(postcss(processors))
-    .pipe(size({title: '[optimize:css](dst)'}))
     .pipe(sourcemaps.init())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(config.dest))

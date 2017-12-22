@@ -164,5 +164,11 @@ module.exports = {
         collapseWhitespace: true
       }
     },
+    css: {
+      src: productionAssets + '/css/app.css',
+      dest: productionAssets + '/css/',
+      options: {},
+      replace: {}
+    },
   },
 }
