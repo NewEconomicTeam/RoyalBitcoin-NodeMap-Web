@@ -11,8 +11,8 @@ gulp.task('build:prod', ['build'], function(callback) {
       'html:prod',
       'optimize:html',
       'optimize:css',
-      // 'optimize:js',
-      // 'optimize:images'
+      'optimize:js',
+      'optimize:images'
     ],
     // 'revision',
     // 'rev:collect',
