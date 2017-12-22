@@ -11,5 +11,6 @@ gulp.task('optimize:html', function() {
     .pipe(size({title: '[optimize:html](src)'}))
     .pipe(htmlmin(config.options))
     .pipe(size({title: '[optimize:html](dst)'}))
-    .pipe(gulp.dest(config.dest));
+    .pipe(gulp.dest(config.dest))
+    .pipe(browsersync.stream());
 });
