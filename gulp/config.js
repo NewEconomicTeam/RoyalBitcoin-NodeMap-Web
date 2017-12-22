@@ -139,14 +139,21 @@ module.exports = {
   },
   nodeModules: {
     development: {
-      src: [
-        node_modules + '/bootstrap/dist/**/bootstrap.css',
-        node_modules + '/bootstrap/dist/**/bootstrap-theme.css',
-        node_modules + '/echarts/dist/echarts.js',
-        node_modules + '/jquery/dist/jquery.js',
-        node_modules + '/bootstrap/dist/**/bootstrap.js',
-      ],
-      dest: developmentAssets
+      css: {
+        src: [
+          node_modules + '/bootstrap/dist/css/bootstrap.css',
+          node_modules + '/bootstrap/dist/css/bootstrap-theme.css',
+        ],
+        dest: developmentAssets + '/css',
+      },
+      js: {
+        src: [
+          node_modules + '/echarts/dist/echarts.js',
+          node_modules + '/jquery/dist/jquery.js',
+          node_modules + '/bootstrap/dist/js/bootstrap.js',
+        ],
+        dest: developmentAssets + '/js',
+      },
     }
   }
 }
