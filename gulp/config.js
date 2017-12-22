@@ -192,5 +192,14 @@ module.exports = {
       dest: productionAssets + '/js/',
       options: {}
     },
+    images: {
+      src: productionAssets + '/images/**/*.{jpg,jpeg,png,gif}',
+      dest: productionAssets + '/images/',
+      options: {
+        optimizationLevel: 3,
+        progressive: true,
+        interlaced: true
+      }
+    },
   },
 }
