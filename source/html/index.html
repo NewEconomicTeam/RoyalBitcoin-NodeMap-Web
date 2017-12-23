@@ -1,5 +1,7 @@
 {% extends "pages/base.html" %}
 
+{% load i18n %}
+
 {% block content %}
 <div class="nodemap" id="nodemap"></div>
 <div class="container">
@@ -7,6 +9,6 @@
 </div>
 
 <template id="nodeinfo--template">
-  <div><span class="nodeinfo--count"></span> 节点 </div>
+  <div><span class="nodeinfo--count"></span> {% trans "节点" %} </div>
 </template>
 {% endblock %}
