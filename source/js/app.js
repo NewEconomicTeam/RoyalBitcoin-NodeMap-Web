@@ -94,7 +94,7 @@ function updateMap(allNodes) {
             return value !== '';
           }).join(gettext('，')),
           interpolate(
-            gettext('数量: %(count)s'),
+            gettext('数量：%(count)s'),
             location, true),
         ].join('<br>');
       }
