@@ -88,8 +88,11 @@ function updateMap(allNodes) {
           count: data[2]};
         return [
           interpolate(
-            gettext('%(country)s，%(province)s，%(city)s'),
-            location, true),
+            gettext('%(country)s %(province)s %(city)s'),
+            location, true
+          ).split(' ').filter(function(value) {
+            return value !== '';
+          }).join(gettext('，')),
           interpolate(
             gettext('数量: %(count)s'),
             location, true),
