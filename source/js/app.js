@@ -81,12 +81,18 @@ function updateMap(allNodes) {
     tooltip: {
       formatter: function(param) {
         var data = param.data;
-        var location = [data[5], data[4], data[3]];
+        var location = {
+          country: data[5],
+          province: data[4],
+          city: data[3],
+          count: data[2]};
         return [
-          location.filter(function(value) {
-            return value !== '';
-          }).join(', '),
-          '数量: ' + data[2]
+          interpolate(
+            gettext('%(country)s，%(province)s，%(city)s'),
+            location, true),
+          interpolate(
+            gettext('数量: %(count)s'),
+            location, true),
         ].join('<br>');
       }
     },
