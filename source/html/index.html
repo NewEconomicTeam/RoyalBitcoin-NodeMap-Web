@@ -3,12 +3,14 @@
 {% load i18n %}
 
 {% block content %}
-<div class="nodemap" id="nodemap"></div>
-<div class="container">
-  <div class="nodeinfo"></div>
-</div>
+<div id="app-nodemap">
+  <div class="nodemap" id="nodemap"></div>
+  <div class="container">
+    <div class="nodeinfo"></div>
+  </div>
 
-<template id="nodeinfo--template">
-  <div><span class="nodeinfo--count"></span> {% trans "节点" %} </div>
-</template>
+  <template id="nodeinfo--template">
+    <div><span class="nodeinfo--count"></span> {% trans "节点" %} </div>
+  </template>
+</div>
 {% endblock %}
