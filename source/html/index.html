@@ -5,12 +5,13 @@
 {% block content %}
 <div id="app-nodemap">
   <div class="nodemap" id="nodemap"></div>
-  <div class="container">
-    <div class="nodeinfo"></div>
-  </div>
-
-  <template id="nodeinfo--template">
-    <div><span class="nodeinfo--count"></span> {% trans "节点" %} </div>
-  </template>
 </div>
+
+<div class="container">
+  <div class="nodeinfo"></div>
+</div>
+
+<template id="nodeinfo--template">
+  <div><span class="nodeinfo--count"></span> {% trans "节点" %} </div>
+</template>
 {% endblock %}
