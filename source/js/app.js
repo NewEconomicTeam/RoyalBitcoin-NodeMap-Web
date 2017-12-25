@@ -1,3 +1,5 @@
+$('body').on('touchstart', function(){});
+
 new Vue({
   el: '#nodemap',
   data: {
@@ -156,10 +158,7 @@ new Vue({
   mounted: function() {
     var that = this;
     this.$nextTick(function() {
-      $('body').on('touchstart', function(){});
-
       this.map = echarts.init($('#nodemap').get(0));
-
       this.updateNodes();
     });
   }
