@@ -41,6 +41,7 @@ module.exports = {
         developmentAssets + '/js/bootstrap.js',
         developmentAssets + '/js/echarts.js',
         developmentAssets + '/js/jquery.js',
+        developmentAssets + '/js/vue.js',
       ],
       options: {
         force: true,
@@ -68,6 +69,10 @@ module.exports = {
         // echarts
         '/static/pages/js/echarts.js':
           '//cdn.bootcss.com/echarts/3.8.5/echarts.min.js',
+
+        // vue
+        '/static/pages/js/vue.js':
+          '//cdn.bootcss.com/vue/2.5.13/vue.min.js',
 
         // Others
         '/static/pages/js/jquery.js':
@@ -168,6 +173,7 @@ module.exports = {
           node_modules + '/echarts/dist/echarts.js',
           node_modules + '/jquery/dist/jquery.js',
           node_modules + '/bootstrap/dist/js/bootstrap.js',
+          node_modules + '/vue/dist/vue.js',
         ],
         dest: developmentAssets + '/js',
       },
