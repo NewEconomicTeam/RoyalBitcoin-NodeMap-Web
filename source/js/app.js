@@ -1,5 +1,5 @@
 new Vue({
-  el: '#app-nodemap',
+  el: '#nodemap',
   data: {
     map: null,
     sizes: [
