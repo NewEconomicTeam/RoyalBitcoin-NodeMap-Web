@@ -164,3 +164,13 @@ new Vue({
     });
   }
 });
+
+new Vue({
+  el: '#navbar-collapse-list',
+  data: {},
+  methods: {
+    languageChange: function() {
+      $('#language-select').submit();
+    }
+  },
+});
