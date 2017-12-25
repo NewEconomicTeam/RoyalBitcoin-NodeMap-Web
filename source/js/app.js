@@ -166,11 +166,11 @@ new Vue({
 });
 
 new Vue({
-  el: '#navbar-collapse-list',
+  el: '#select-language',
   data: {},
   methods: {
     languageChange: function() {
-      $('#language-select').submit();
+      $('#select-language').submit();
     }
   },
 });

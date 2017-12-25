@@ -1,6 +1,6 @@
 {% load i18n %}
 
-<form id="language-select" class="navbar-form navbar-right" action="{% url 'set_language' %}" method="post">{% csrf_token %}
+<form id="select-language" class="navbar-form navbar-right" action="{% url 'set_language' %}" method="post">{% csrf_token %}
   <div class="form-group">
     <select @change="languageChange" name="language" class="form-control">
     {% get_current_language as LANGUAGE_CODE %}
