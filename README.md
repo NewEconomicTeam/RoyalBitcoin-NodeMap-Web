@@ -59,3 +59,7 @@
 ## License
 
 本项目采用 [![license](https://img.shields.io/github/license/NewEconomicTeam/RoyalBitcoin-NodeMap-Web.svg)](https://github.com/NewEconomicTeam/RoyalBitcoin-NodeMap-Web) 协议开源发布，请您在修改后维持开源发布，并为原作者额外署名，谢谢您的尊重
+
+## 问题
+
+如果您在使用该应用时遇到任何问题，请在 GitHub 上查看本项目 [![RoyalBitcoin-NodeMap-Web](https://img.shields.io/badge/Repo-RoyalBitcoin--NodeMap--Web-brightgreen.svg)](https://github.com/NewEconomicTeam/RoyalBitcoin-NodeMap-Web) ，并在其中提交 Issues 给我们，多谢您的帮助~~
