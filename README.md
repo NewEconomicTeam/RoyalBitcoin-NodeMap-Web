@@ -55,3 +55,7 @@
 - Base
     - Node.js
     - Gulp
+
+## License
+
+本项目采用 [![license](https://img.shields.io/github/license/NewEconomicTeam/RoyalBitcoin-NodeMap-Web.svg)](https://github.com/NewEconomicTeam/RoyalBitcoin-NodeMap-Web) 协议开源发布，请您在修改后维持开源发布，并为原作者额外署名，谢谢您的尊重
