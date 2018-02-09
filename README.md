@@ -40,3 +40,18 @@
 ### `gulp publish`
 
 发布模式，将对源码进行编译、压缩，并输出到 `gulp/config.js` 文件中指定的路径中
+
+## 技术栈
+
+- HTML
+    - Django Template
+- CSS
+    - PostCSS
+    - Bootstrap
+- JS
+    - jQuery
+    - Vue
+    - ECharts
+- Base
+    - Node.js
+    - Gulp
